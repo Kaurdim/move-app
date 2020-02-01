@@ -1,0 +1,21 @@
+.loader {
+  border: 8px solid rgb(54, 51, 51);
+  border-bottom: 8px solid transparent;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}

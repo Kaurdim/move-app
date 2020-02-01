@@ -1,0 +1,55 @@
+.movie {
+  width: 240px;
+  height: 380px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+}
+
+.movie:hover .poster {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.movie:hover .back {
+  transform: perspective(600px) rotateY(0);
+}
+
+.poster, .back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: transform 1s ease;
+  border-radius: 10px;
+  background: linear-gradient(#D6D6D6, #f2F2F2);
+}
+
+.poster {
+  transform: perspective(600px) rotateY(0);
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  color: rgb(18, 18, 90);
+
+  transform: perspective(600px) rotateY(180deg);
+  padding: 8px;
+}
+
+.movieTitle {
+  font-size: calc(14px + 1vw);
+  margin-bottom: 24px;
+}
+
+.movieDescription {
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+

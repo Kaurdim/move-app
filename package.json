@@ -1,7 +1,8 @@
 {
-  "name": "move-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "movie-app",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Dmitriy Kurov",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,9 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
